@@ -4,9 +4,9 @@
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 
-APPID = '5637720'
-LOGIN = ''
-PASSWORD = ''
+APPID = '5637720'  # add your application id or leave this
+LOGIN = ''  # VK.com login
+PASSWORD = ''  # VK.com password
 
 driver = webdriver.Chrome()
 driver.get("http://api.vkontakte.ru/oauth/authorize?"
