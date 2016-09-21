@@ -1,2 +1,2 @@
 # VKmusic
-Simple music downloader form VK.com
+Simple python music downloader from VK.com
