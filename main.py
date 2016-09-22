@@ -10,6 +10,7 @@ sys.setdefaultencoding("utf-8")
 TOKEN = ''
 
 
+
 session = vk.Session(access_token=TOKEN)
 api = vk.API(session)
 
