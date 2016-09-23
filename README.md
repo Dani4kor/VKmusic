@@ -10,7 +10,7 @@ Simple python music downloader from VK.com
 pip install -r requirements.txt
 ```
 Dependencies:
-* selenium
+* selenium -> need for oauthselenium
 * requests
 * vk
 
