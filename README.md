@@ -23,7 +23,7 @@ Dependencies:
 
 ```
 Default Selenium webdrive - Chrome, you can change it, BEWARE bugs with Firefox v48!
-Chromihmdriver also in repo
+[Chromihmdriver](https://sites.google.com/a/chromium.org/chromedriver/) also in repo
 ```
 
 * use `ACCESS TOKEN` and userid in `main.py`
@@ -37,7 +37,7 @@ Song Mavis Staples-Will The Circle Be Unbroken.mp3 already exists
 Song Mavis Staples-Step Into The Light.mp3 already exists
 ```
 
-## FIX
+## Fix & Tips
 
 * Main problems of IOerrors are bad information in artist/title name, try to add another version of song
 * Socket problems - change IDE or Console and rerun main.py
