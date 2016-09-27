@@ -24,6 +24,7 @@ Dependencies:
 ```
 Default Selenium webdrive - Chrome, you can change it, BEWARE bugs with Firefox v48!
 ```
+
 [Chromihmdriver](https://sites.google.com/a/chromium.org/chromedriver/) also in repo
 
 
