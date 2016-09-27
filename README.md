@@ -18,8 +18,8 @@ Dependencies:
 
 ## Usage:
 
-* Create standalone application https://vk.com/editapp?act=create
-* Get `ACCESS TOKEN` for audio method OR you can use `oautchselenium.py` -> write your Login/Phone, Password and APPID in appropriate variables and script will print `ACCESS TOKEN`, user ID, expire TOKEN
+* Create VK [standalone application](https://vk.com/editapp?act=create)
+* Get `ACCESS TOKEN` for audio method OR you can use `oauthselenium.py` -> write your Login/Phone, Password and APPID in appropriate variables and script will print `ACCESS TOKEN`, user ID, expire TOKEN
 
 ```
 Default Selenium webdrive - Chrome, you can change it, BEWARE bugs with Firefox v48!
