@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 import sys, os, re
@@ -7,12 +8,13 @@ from json import loads, dumps
 from urllib import urlopen
 from time import sleep
 
+__author__ = 'ddani'
+
 # only for python 2.7
 reload(sys)
 sys.setdefaultencoding("utf-8")
 
-
-TOKEN = ''  # access token
+TOKEN = ''  # access token VK
 USER_ID = ''  # user VK id
 
 audio_request = "https://api.vkontakte.ru/method/" \
@@ -21,7 +23,7 @@ audio_request = "https://api.vkontakte.ru/method/" \
 audio = loads(requests.get(audio_request).text)
 
 # debug api request
-# print dumps(api.audio.get(user_ids=USER_ID), indent=4, separators=(',', ': '))  #
+# print dumps(audio['response'], indent=4, separators=(',', ': '))
 
 path = os.path.join(os.path.realpath(os.path.dirname(__file__)), "VKmusic")
 if not os.path.exists(path):
@@ -47,9 +49,4 @@ for i in audio['response']:
             print"Song " + artist_title + " already exists"
             sleep(0.05)
     except IOError as e:
-        print "IO ERROR [" + str(e.errno) + "] with " + artist_title + " try another type OR version song!\n"
-
-
-
-
-
+        print "\nIO ERROR [" + str(e.errno) + "] with " + artist_title + " try another type OR version song!\n"
