@@ -30,6 +30,12 @@ Chromihmdriver also in repo
 
 * main.py will create VKmusic folder in directory, and start Download all music(start from top) that you have in your VK acc
 * Script also Overwrite same music and except IO errors -> info about ERROR and Songs you will see in Console
+```
+IO ERROR [2] with GanGuBaS ft. Bizaro ft. Christina Luck - !@#$%^&*()0-9a-zA-z
+
+Song Mavis Staples-Will The Circle Be Unbroken.mp3 already exists
+Song Mavis Staples-Step Into The Light.mp3 already exists
+```
 
 ## FIX
 
