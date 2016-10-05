@@ -16,19 +16,24 @@ sys.setdefaultencoding("utf-8")
 
 TOKEN = ''  # access token VK
 USER_ID = ''  # user VK id
+COUNT = 0  # 0 is max count of songs(5000)
 
 audio_request = "https://api.vkontakte.ru/method/" \
                 "audio.get?uid=" + USER_ID + \
-                "&access_token=" + TOKEN
+                "&access_token=" + TOKEN + \
+                "&count=" + str(COUNT)
+
 audio = loads(requests.get(audio_request).text)
 
 # debug api request
-# print dumps(audio['response'], indent=4, separators=(',', ': '))
+# print dumps(audio['response'] , indent=4, separators=(',', ': '))
 
 path = os.path.join(os.path.realpath(os.path.dirname(__file__)), "VKmusic")
 if not os.path.exists(path):
     os.makedirs(path)
+song_count, error_count = 0, 0
 for i in audio['response']:
+    song_count += 1
     if len(i['title']) >= 64:
         title = i['title'][0:len(i['title']) / 2]
 
@@ -49,4 +54,12 @@ for i in audio['response']:
             print"Song " + artist_title + " already exists"
             sleep(0.05)
     except IOError as e:
-        print "\nIO ERROR [" + str(e.errno) + "] with " + artist_title + " try another type OR version song!\n"
+        print "IO ERROR [" + str(e.errno) + "] with " + artist_title + " try another type OR version song!\n"
+        error_count += 1
+
+print '\nDownloaded ' + str(song_count) + " | Available " + \
+      str(loads(requests.get("https://api.vkontakte.ru/method/" + \
+                             "audio.getCount?owner_id=" + USER_ID + \
+                             "&access_token=" + TOKEN).text)['response']) + " | " + "Errors " + str(error_count)
+print '\nSome songs can be closed by owners and are`t available through the API, but available on WEB/official' + \
+      ' applications - VK support quote\n'
