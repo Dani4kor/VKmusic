@@ -47,7 +47,7 @@ Song Mavis Staples-Step Into The Light.mp3 already exists
 
 ## VK API
 
-* Some of songs has Copyright protection, what means API didn`t answer you full list of songs, but you still can find another version of song - add it  and try download.
+* Some of songs has Copyright protection, what means API didn`t answer you full list of songs, but you still can find another version of song - add it to audio and try again!.
 
 
 
