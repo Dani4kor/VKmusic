@@ -44,9 +44,14 @@ Song Mavis Staples-Step Into The Light.mp3 already exists
 * Main problems of IOerrors are bad information in artist/title name, try to add another version of song
 * Socket problems - change IDE or Console and rerun main.py
 
-## TO DO
-* automate parse ACCESS TOKEN by HTMLparser and combine it with main.py
-* Fix README
+
+## VK API
+
+* Some of songs has Copyright protection, what means API didn`t answer you full list of songs, but you still can find another version of song - add it  and try download.
+
+
+
+
 
 
 
