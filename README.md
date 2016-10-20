@@ -28,9 +28,9 @@ Default Selenium webdrive - Chrome, you can change it, BEWARE bugs with Firefox 
 [Chromihmdriver](https://sites.google.com/a/chromium.org/chromedriver/) also in repo
 
 
-* use `ACCESS TOKEN` and userid in `main.py`
+* use `ACCESS TOKEN` and userid in `vkmusic.py`
 
-* main.py will create VKmusic folder in directory, and start Download all music(start from top) that you have in your VK acc
+* vkmusic.py will create VKmusic folder in directory, and start Download all music(start from top) that you have in your VK acc
 * Script also Overwrite same music and except IO errors -> info about ERROR and Songs you will see in Console
 ```
 IO ERROR [2] with GanGuBaS ft. Bizaro ft. Christina Luck - !@#$%^&*()0-9a-zA-z
@@ -42,7 +42,7 @@ Song Mavis Staples-Step Into The Light.mp3 already exists
 ## Fix & Tips
 
 * Main problems of IOerrors are bad information in artist/title name, try to add another version of song
-* Socket problems - change IDE or Console and rerun main.py
+* Socket problems - change IDE or Console and rerun vkmusic.py
 
 
 ## VK API
