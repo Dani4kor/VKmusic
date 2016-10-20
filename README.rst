@@ -14,7 +14,7 @@ Setup:
 
     pip install -r requirements.txt
 
-Dependencies: \* `selenium`_ -> need only for oauthselenium \*
+Dependencies: \* `selenium`_ -> need only for selenium_gettoken.py \*
 `requests`_
 
 Usage:
@@ -22,9 +22,13 @@ Usage:
 
 -  Create VK `standalone application`_
 -  Get ``ACCESS TOKEN`` for audio method OR you can use
-   ``oauthselenium.py`` -> write your Login/Phone, Password and APPID in
-   appropriate variables and script will print ``ACCESS TOKEN``, user
-   ID, expire TOKEN
+   ``selenium_gettoken.py``
+::
+
+    >>> from selenium_gettoken import *
+    >>> info = Gettoken(appid, login, password)
+    >>> token = info.token()
+    {'access_token':'XXXXXXX', 'expires_in':'XXXX', 'user_id':'XXXXXX'}
 
 ::
 
