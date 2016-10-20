@@ -38,15 +38,12 @@ Usage:
 
 -  use ``ACCESS TOKEN`` and userid in ``vkmusic.py``
 
--  vkmusic.py will create VKmusic folder in directory, and start
-   Download all music(start from top) that you have in your VK acc
--  Script also Overwrite same music and except IO errors -> info about
-   ERROR and Songs you will see in Console \`\`\` IO ERROR [2] with
-   GanGuBaS ft. Bizaro ft. Christina Luck - !@#$%^&\*()0-9a-zA-z
+::
 
-Song Mavis Staples-Will The Circle Be Unbroken.mp3 already exists Song
-Mavis Staples-Step Into The Light.mp3 already exists \`\`\`
-
+    >>> import vkmusic
+    >>> vk.music.downloadmusic(ACCESS TOKEN, USER ID, COUNT=0)
+    >>> token = info.token()
+    {'access_token':'XXXXXXX', 'expires_in':'XXXX', 'user_id':'XXXXXX'}
 Fix & Tips
 ----------
 
