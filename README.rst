@@ -1,9 +1,7 @@
 VKmusic
 =======
 
-Simple python music downloader from VK.com
-
-**author** = “ddani”
+Simple python console music downloader from VK.com through VK API
 
 Setup:
 ------
