@@ -7,7 +7,7 @@ from selenium.common.exceptions import NoSuchElementException
 
 
 class Gettoken():
-    def __init__(self, appid=5637720, login=str, password=str):
+    def __init__(self, appid=5637720, login=None, password=None):
         self.appid = str(appid)
         self.login = login
         self.password = password
@@ -33,12 +33,19 @@ class Gettoken():
         except NoSuchElementException:
             print "TOKEN has already been received"
         finally:
-            self.rtrtoen()
+
+
+            urllist = (self.driver.current_url.split("#"))[1].split("&")
+            access_token, expires_in, user_id = (urllist[0].split("="))[1], \
+                                                (urllist[1].split("="))[1], \
+                                                (urllist[2].split("="))[1]
+            self.tokenlist = {'user_id': user_id,
+                    'access_token': access_token,
+                    'expires_in': expires_in}
+            self.token()
             self.driver.close()
 
-    def rtrtoen(self):
-        urllist = (self.driver.current_url.split("#"))[1].split("&")
-        access_token, expires_in, user_id = (urllist[0].split("="))[1], \
-            (urllist[1].split("="))[1], \
-            (urllist[2].split("="))[1]
-        return {'user_id': user_id, 'access_token': access_token, 'expires_in': expires_in}
+    def token(self):
+        return self.tokenlist
+
+

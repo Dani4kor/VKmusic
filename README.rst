@@ -22,7 +22,7 @@ Usage:
 
 -  Create VK `standalone application`_
 -  Get ``ACCESS TOKEN`` for audio method OR you can use
-   ``selenium_gettoken.py``
+   ``selenium_gettoken.py`` requires selenium depend
 ::
 
     >>> from selenium_gettoken import *
