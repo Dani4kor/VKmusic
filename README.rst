@@ -14,8 +14,11 @@ Setup:
 
     pip install -r requirements.txt
 
-Dependencies: \* `selenium`_ -> need only for selenium_gettoken.py \*
-`requests`_
+Dependencies:
+
+-  \* `selenium`_ -> need only for selenium_gettoken.py \*
+
+-  `requests`_
 
 Usage:
 ------
@@ -23,6 +26,7 @@ Usage:
 -  Create VK `standalone application`_
 -  Get ``ACCESS TOKEN`` for audio method OR you can use
    ``selenium_gettoken.py`` requires selenium depend
+
 ::
 
     >>> from selenium_gettoken import *
