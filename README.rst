@@ -47,7 +47,11 @@ Usage:
     >>> import vkmusic
     >>> vk.music.downloadmusic(ACCESS TOKEN, USER ID, COUNT=0)
     >>> token = info.token()
-    {'access_token':'XXXXXXX', 'expires_in':'XXXX', 'user_id':'XXXXXX'}
+    Song XXXX.mp3 Downloaded
+    Song XXXX.mp3 already exists
+    Downloaded XX | Available XX | Errors X
+
+
 Fix & Tips
 ----------
 
