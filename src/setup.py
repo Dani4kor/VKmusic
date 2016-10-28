@@ -122,8 +122,7 @@ setup(
     package_data=find_package_data(PACKAGE, only_in_packages=False),
     classifiers=[
         "Programming Language :: Python",
-        "Development Status :: 3 - Alpha",
-        "Intended Audience :: Developers",
+        "Development Status :: 5 - Production/Stable",
         "License :: OSI Approved :: GNU General Public License (GPL)",
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
