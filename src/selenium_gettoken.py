@@ -13,7 +13,7 @@ class Gettoken():
         self.password = password
         self.driver = webdriver.Chrome()
 
-        self.driver.get("http://api.vkontakte.ru/oauth/authorize?"
+        self.driver.get("http://api.vk.com/oauth/authorize?"
                         "client_id=5637720&scope=audio,offline"
                         "&redirect_uri=https://oauth.vk.com/blank.html"
                         "&display=page&response_type=token")
