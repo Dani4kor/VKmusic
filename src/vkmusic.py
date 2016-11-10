@@ -59,7 +59,7 @@ def downloadmusic(token, userid, count=0):
             error_count += 1
 
     print '\nDownloaded ' + str(song_count) + " | Available " + \
-          str(loads(requests.get("https://api.vkontakte.ru/method/" +
+          str(loads(requests.get("https://api.vk.com/method/" +
                                  "audio.getCount?owner_id=" + userid +
                                  "&access_token=" + token).text)['response']) + " | " + "Errors " + str(error_count)
     print '\nSome songs can be closed by owners and are`t available through the API, but available on WEB/official' + \
