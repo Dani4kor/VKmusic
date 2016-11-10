@@ -78,7 +78,7 @@ def apirequest(token, userid, count):
 
 
     global audio
-    audio_request = "https://api.vkontakte.ru/method/" \
+    audio_request = "https://api.vk.com/method/" \
                     "audio.get?uid=" + userid + \
                     "&access_token=" + token + \
                     "&count=" + str(count)
