@@ -64,6 +64,10 @@ VK API
    you full list of songs, but you still can find another version of
    song - add it to audio and try again!.
 
+LICENSE
+------
+-   This project is licensed under the GPLv3 see the LICENSE file for details
+
 .. _selenium: https://github.com/SeleniumHQ/selenium
 .. _requests: https://github.com/kennethreitz/requests
 .. _standalone application: https://vk.com/editapp?act=create
