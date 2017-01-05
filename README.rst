@@ -3,7 +3,7 @@ VKmusic
 
 Simple python console music downloader from VK.com through VK API
 
-:red:`Vk closed on 16 dec 2016 his public audio api`
+:red:'Vk closed on 16 dec 2016 his public audio api'
 =======
 
 Setup:
