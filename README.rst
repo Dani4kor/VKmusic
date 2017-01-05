@@ -2,8 +2,10 @@ VKmusic
 =======
 
 Simple python console music downloader from VK.com through VK API
+.. role:: red
 
-:red Vk closed on 16 dec 2016 his public audio api
+An example of using :red:`interpreted text`
+Vk closed on 16 dec 2016 his public audio api
 =======
 
 Setup:
