@@ -3,6 +3,9 @@ VKmusic
 
 Simple python console music downloader from VK.com through VK API
 
+Vk closed on 16 dec 2016 his public audio api
+=======
+
 Setup:
 ------
 
