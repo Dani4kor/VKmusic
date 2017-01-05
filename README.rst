@@ -3,7 +3,7 @@ VKmusic
 
 Simple python console music downloader from VK.com through VK API
 
-Vk closed on 16 dec 2016 his public audio api
+:red:`Vk closed on 16 dec 2016 his public audio api`
 =======
 
 Setup:
@@ -75,3 +75,5 @@ LICENSE
 .. _requests: https://github.com/kennethreitz/requests
 .. _standalone application: https://vk.com/editapp?act=create
 .. _Chromihmdriver: https://sites.google.com/a/chromium.org/chromedriver/
+
+.. role:: red
