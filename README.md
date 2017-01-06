@@ -1,7 +1,7 @@
 VKmusic
 =======
 
-VK.com closed his public audio api on 16 dec 2016 =======
+VK.com closed his public audio api on 16 dec 2016 
 
 Simple python console music downloader from VK.com through VK API
 
@@ -58,7 +58,9 @@ VK API
 
 -   Some of songs has Copyright protection, what means API didn\`t answer you full list of songs, but you still can find another version of song - add it to audio and try again!.
 
-LICENSE —— - This project is licensed under the GPLv3 see the LICENSE file for details
+LICENSE
+------
+This project is licensed under the GPLv3 see the LICENSE file for details
 
   [selenium]: https://github.com/SeleniumHQ/selenium
   [requests]: https://github.com/kennethreitz/requests
