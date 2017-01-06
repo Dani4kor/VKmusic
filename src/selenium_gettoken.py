@@ -47,5 +47,3 @@ class Gettoken():
 
     def token(self):
         return self.tokenlist
-
-
